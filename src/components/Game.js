@@ -4,15 +4,10 @@ import Hangman from "../components/Hangman";
 import Puzzle from "../components/Puzzle";
 import LetterList from "./LetterList";
 import PlayGame from "../components/PlayGame";
+import words from "../data/words";
 
 function Game() {
-  const [puzzleWord, setPuzzleWord] = useState([
-    { letter: "H", visible: false },
-    { letter: "O", visible: false },
-    { letter: "U", visible: false },
-    { letter: "S", visible: false },
-    { letter: "E", visible: false },
-  ]);
+  const [puzzleWord, setPuzzleWord] = useState([]);
 
   const [turnsLeft, setTurnsLeft] = useState(10);
   const [isGameActive, setIsGameActive] = useState(false);
@@ -30,6 +25,8 @@ function Game() {
   };
 
   const startGame = () => {
+    setPuzzleWord(words[Math.floor(Math.random() * words.length)]);
+    console.log(puzzleWord);
     setIsGameActive(!isGameActive);
   };
 
