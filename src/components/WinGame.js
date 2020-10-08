@@ -4,8 +4,11 @@ import "../styles/WinGame.css";
 function WinGame({ playAgain }) {
   return (
     <div id="win-game__container">
-      <h1>You Won!</h1>
-      <button onClick={playAgain}>Play Again!</button>
+      <div class="win__title">Nice,</div>
+      <div class="win__title">You Got It!</div>
+      <button id="btn__play-game" onClick={playAgain}>
+        Play Again!
+      </button>
     </div>
   );
 }

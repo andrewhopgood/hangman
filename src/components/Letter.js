@@ -3,11 +3,11 @@ import "../styles/Letter.css";
 
 function Letter({ name, searchForLetter }) {
   const [isActive, setIsActive] = useState(false);
-  const [btnColor, setBtnColor] = useState("#eb9012");
+  const [btnColor, setBtnColor] = useState("#F1D302");
 
   const handleClick = (e) => {
     setIsActive(true);
-    setBtnColor("#e3e3e3");
+    setBtnColor("#235789");
     searchForLetter(e.target.value);
   };
 

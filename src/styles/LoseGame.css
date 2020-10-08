@@ -1,4 +1,4 @@
-#win-game__container {
+#lose-game__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6,6 +6,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -15,9 +18,9 @@
   margin-top: 25px;
 }
 
-.win__title {
+.lose__title {
   color: #f1d302;
   font-size: 60px;
   font-family: "Anton", sans-serif;
 }
-/*# sourceMappingURL=WinGame.css.map */
+/*# sourceMappingURL=LoseGame.css.map */

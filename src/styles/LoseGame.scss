@@ -1,6 +1,7 @@
-#win-game__container {
+#lose-game__container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   height: 275px;
   width: 80%;
@@ -8,7 +9,7 @@
   margin-top: 25px;
 }
 
-.win__title {
+.lose__title {
   color: #f1d302;
   font-size: 60px;
   font-family: "Anton", sans-serif;

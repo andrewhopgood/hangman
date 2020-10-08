@@ -11,6 +11,7 @@
   width: 16px;
   height: 40px;
   margin: 5px;
-  border-bottom: 5px solid black;
+  border-bottom: 5px solid white;
+  color: white;
 }
 /*# sourceMappingURL=PuzzleLetter.css.map */
