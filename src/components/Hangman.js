@@ -13,6 +13,7 @@ function Hangman({ turnsLeft }) {
   let rightArm = <div id="right-arm"></div>;
   let leftLeg = <div id="left-leg"></div>;
   let rightLeg = <div id="right-leg"></div>;
+  let gameOver = <div id="game-over">Game Over</div>;
 
   if (turnsLeft === 9) {
     hangman = <>{base}</>;
@@ -124,6 +125,7 @@ function Hangman({ turnsLeft }) {
         {rightArm}
         {leftLeg}
         {rightLeg}
+        {gameOver}
       </>
     );
   }
