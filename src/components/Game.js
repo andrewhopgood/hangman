@@ -69,7 +69,6 @@ function Game() {
     playGame = (
       <>
         <LoseGame playAgain={playAgain} />
-        <Puzzle puzzleWord={puzzleWord} />
       </>
     );
   }

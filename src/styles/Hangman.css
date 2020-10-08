@@ -15,6 +15,7 @@
   border: 1px solid black;
   padding: 0;
   margin-top: 25px;
+  background-color: #e3e3e3;
 }
 
 #base {
@@ -64,7 +65,7 @@
 #head {
   width: 40px;
   height: 40px;
-  border: 3px solid black;
+  border: 3px solid #235789;
   border-radius: 50%;
   display: block;
   position: relative;
@@ -73,10 +74,10 @@
 }
 
 #body {
-  background-color: black;
+  background-color: #235789;
   width: 1px;
   height: 75px;
-  border: 1px solid black;
+  border: 1px solid #235789;
   display: block;
   position: relative;
   top: -185px;
@@ -84,10 +85,10 @@
 }
 
 #left-arm {
-  background-color: black;
+  background-color: #235789;
   width: 35px;
   height: 1px;
-  border: 1px solid black;
+  border: 1px solid #235789;
   display: block;
   position: relative;
   top: -240px;
@@ -97,10 +98,10 @@
 }
 
 #right-arm {
-  background-color: black;
+  background-color: #235789;
   width: 35px;
   height: 1px;
-  border: 1px solid black;
+  border: 1px solid #235789;
   display: block;
   position: relative;
   top: -242px;
@@ -110,10 +111,10 @@
 }
 
 #left-leg {
-  background-color: black;
+  background-color: #235789;
   width: 1px;
   height: 50px;
-  border: 1px solid black;
+  border: 1px solid #235789;
   display: block;
   position: relative;
   top: -193px;
@@ -125,10 +126,10 @@
 }
 
 #right-leg {
-  background-color: black;
+  background-color: #235789;
   width: 1px;
   height: 50px;
-  border: 1px solid black;
+  border: 1px solid #235789;
   display: block;
   position: relative;
   top: -245px;
