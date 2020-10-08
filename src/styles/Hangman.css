@@ -1,0 +1,141 @@
+#hangman__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 275px;
+  overflow-y: hidden;
+  width: 80%;
+  border: 1px solid black;
+  padding: 0;
+  margin-top: 25px;
+}
+
+#base {
+  background-color: black;
+  width: 200px;
+  height: 1px;
+  border: 1px solid black;
+  display: block;
+  position: relative;
+  top: 230px;
+  left: 0px;
+}
+
+#left-post {
+  background-color: black;
+  width: 1px;
+  height: 200px;
+  border: 1px solid black;
+  display: block;
+  position: relative;
+  top: 25px;
+  left: 0px;
+}
+
+#top-post {
+  background-color: black;
+  width: 120px;
+  height: 1px;
+  border: 1px solid black;
+  display: block;
+  position: relative;
+  top: -180px;
+  left: 0px;
+}
+
+#noose {
+  background-color: black;
+  width: 1px;
+  height: 15px;
+  border: 1px solid black;
+  display: block;
+  position: relative;
+  top: -183px;
+  left: 120px;
+}
+
+#head {
+  width: 40px;
+  height: 40px;
+  border: 3px solid black;
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  top: -185px;
+  left: 98px;
+}
+
+#body {
+  background-color: black;
+  width: 1px;
+  height: 75px;
+  border: 1px solid black;
+  display: block;
+  position: relative;
+  top: -185px;
+  left: 120px;
+}
+
+#left-arm {
+  background-color: black;
+  width: 35px;
+  height: 1px;
+  border: 1px solid black;
+  display: block;
+  position: relative;
+  top: -240px;
+  left: 89px;
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+}
+
+#right-arm {
+  background-color: black;
+  width: 35px;
+  height: 1px;
+  border: 1px solid black;
+  display: block;
+  position: relative;
+  top: -242px;
+  left: 117px;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+
+#left-leg {
+  background-color: black;
+  width: 1px;
+  height: 50px;
+  border: 1px solid black;
+  display: block;
+  position: relative;
+  top: -193px;
+  left: 120px;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+#right-leg {
+  background-color: black;
+  width: 1px;
+  height: 50px;
+  border: 1px solid black;
+  display: block;
+  position: relative;
+  top: -245px;
+  left: 120px;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+/*# sourceMappingURL=Hangman.css.map */

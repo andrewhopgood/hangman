@@ -1,4 +1,4 @@
-.App {
+#game__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6,14 +6,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #e3e3e3;
-  -ms-touch-action: manipulation;
-      touch-action: manipulation;
+  width: 350px;
+  height: 550px;
+  margin-top: 5px;
 }
-/*# sourceMappingURL=App.css.map */
+/*# sourceMappingURL=Game.css.map */
