@@ -36,13 +36,14 @@ function Game() {
 
   const startGame = () => {
     setPuzzleWord(words[Math.floor(Math.random() * words.length)]);
-    setIsGameActive(!isGameActive);
+    setIsGameActive(true);
   };
 
   const playAgain = () => {
-    setPuzzleWord(words[Math.floor(Math.random() * words.length)]);
+    setPuzzleWord([]);
     setTurnsLeft(10);
     setDidWin(0);
+    startGame();
   };
 
   let playGame = <PlayGame startGame={startGame} />;
