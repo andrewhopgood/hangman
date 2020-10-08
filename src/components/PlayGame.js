@@ -4,6 +4,7 @@ function PlayGame({ startGame }) {
   const play = () => {
     startGame();
   };
+
   return (
     <div>
       <button onClick={play}>Play Game</button>
