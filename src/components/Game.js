@@ -36,7 +36,6 @@ function Game() {
 
   const resetWordVisible = () => {
     for (let i = 0; i < puzzleWord.length; i++) {
-      let display = [...puzzleWord];
       puzzleWord[i].visible = false;
     }
   };
