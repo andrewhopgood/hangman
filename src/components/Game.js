@@ -13,7 +13,7 @@ function Game() {
   const [turnsLeft, setTurnsLeft] = useState(10);
   const [isGameActive, setIsGameActive] = useState(false);
   const [didWin, setDidWin] = useState(0);
-
+  console.log(puzzleWord);
   const trackPuzzleWord = () => {
     setDidWin((prev) => prev + 1);
   };
@@ -34,8 +34,17 @@ function Game() {
     }
   };
 
+  const resetWordVisible = () => {
+    for (let i = 0; i < puzzleWord.length; i++) {
+      let display = [...puzzleWord];
+      puzzleWord[i].visible = false;
+    }
+  };
+
   const startGame = () => {
+    resetWordVisible();
     setPuzzleWord(words[Math.floor(Math.random() * words.length)]);
+
     setIsGameActive(true);
   };
 
