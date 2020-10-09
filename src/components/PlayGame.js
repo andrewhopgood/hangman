@@ -18,7 +18,11 @@ function PlayGame({ startGame }) {
       </div>
       <div id="creator">Created by: Andrew Hopgood</div>
       <div id="github__container">
-        <a href="https://github.com/andrewhopgood" target="_blank">
+        <a
+          href="https://github.com/andrewhopgood"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img id="github__logo" src={githublogo} alt="my github" />
         </a>
       </div>
