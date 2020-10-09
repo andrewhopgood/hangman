@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,kBAAkB,CAAC;EACjB,KAAK,EAAE,OAAO;EACd,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,mBAAmB;CACjC",
+    "sources": [
+        "EndGameMessage.scss"
+    ],
+    "names": [],
+    "file": "EndGameMessage.css"
+}
