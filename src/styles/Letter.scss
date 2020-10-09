@@ -1,14 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Architects+Daughter&family=Lato:wght@900&family=Pacifico&display=swap");
 
 #btn__letter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 35px;
   height: 35px;
   border: none;
-  margin: 2px;
-  color: #222;
-  font-weight: 800;
-  font-size: 14px;
-  font-family: "Anton", sans-serif;
+  margin: 3px;
+  color: #235789;
+  font-weight: 900;
+  font-size: 16px;
   border-radius: 3px;
 }
 
