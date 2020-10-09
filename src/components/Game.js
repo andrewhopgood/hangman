@@ -13,7 +13,6 @@ function Game() {
   const [turnsLeft, setTurnsLeft] = useState(10);
   const [isGameActive, setIsGameActive] = useState(false);
   const [didWin, setDidWin] = useState(0);
-  console.log(puzzleWord);
   const trackPuzzleWord = () => {
     setDidWin((prev) => prev + 1);
   };
