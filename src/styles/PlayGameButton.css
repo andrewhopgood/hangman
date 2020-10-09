@@ -1,0 +1,23 @@
+#div__btn__play-game {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#btn__play-game {
+  margin-top: -50px;
+  background-color: #f1d302;
+  font-family: "Anton", sans-serif;
+  width: 150px;
+  height: 50px;
+  border: none;
+  font-size: 18px;
+  color: #555;
+  outline: 2px solid #0073e6;
+  outline-offset: -5px;
+}
+/*# sourceMappingURL=PlayGameButton.css.map */
