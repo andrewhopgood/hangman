@@ -5,16 +5,16 @@
   height: 275px;
   overflow-y: hidden;
   width: 80%;
-  border: 1px solid black;
   padding: 0;
   margin-top: 25px;
   background-color: #e3e3e3;
+  border-radius: 10px;
 }
 
 #base {
   background-color: black;
   width: 200px;
-  height: 1px;
+  height: 5px;
   border: 1px solid black;
   display: block;
   position: relative;
@@ -24,7 +24,7 @@
 
 #left-post {
   background-color: black;
-  width: 1px;
+  width: 5px;
   height: 200px;
   border: 1px solid black;
   display: block;
@@ -36,7 +36,7 @@
 #top-post {
   background-color: black;
   width: 120px;
-  height: 1px;
+  height: 5px;
   border: 1px solid black;
   display: block;
   position: relative;
@@ -45,12 +45,12 @@
 }
 #noose {
   background-color: black;
-  width: 1px;
-  height: 15px;
+  width: 2px;
+  height: 18px;
   border: 1px solid black;
   display: block;
   position: relative;
-  top: -183px;
+  top: -187px;
   left: 120px;
 }
 #head {
@@ -60,7 +60,7 @@
   border-radius: 50%;
   display: block;
   position: relative;
-  top: -185px;
+  top: -187px;
   left: 98px;
 }
 
@@ -71,7 +71,7 @@
   border: 1px solid #235789;
   display: block;
   position: relative;
-  top: -185px;
+  top: -187px;
   left: 120px;
 }
 
