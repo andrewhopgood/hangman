@@ -9,11 +9,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 350px;
+  width: 375px;
   height: 550px;
   margin: 0;
   background-color: #235789;
-  border-radius: 10px;
   padding-bottom: 10px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#0d2e5a), to(#537895));
   background-image: linear-gradient(#0d2e5a, #537895);
