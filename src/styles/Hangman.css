@@ -139,16 +139,4 @@
   -webkit-transform-origin: top;
           transform-origin: top;
 }
-
-#game-over {
-  width: 150px;
-  height: 75px;
-  display: block;
-  position: relative;
-  top: -375px;
-  left: 10px;
-  font-size: 30px;
-  font-weight: 900;
-  color: #ca1313;
-}
 /*# sourceMappingURL=Hangman.css.map */
