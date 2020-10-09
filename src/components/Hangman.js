@@ -2,135 +2,92 @@ import React from "react";
 import "../styles/Hangman.css";
 
 function Hangman({ turnsLeft }) {
-  let hangman = <div></div>;
-  let base = <div id="base"></div>;
-  let leftPost = <div id="left-post"></div>;
-  let topPost = <div id="top-post"></div>;
-  let noose = <div id="noose"></div>;
-  let head = <div id="head"></div>;
-  let body = <div id="body"></div>;
-  let leftArm = <div id="left-arm"></div>;
-  let rightArm = <div id="right-arm"></div>;
-  let leftLeg = <div id="left-leg"></div>;
-  let rightLeg = <div id="right-leg"></div>;
+  let hangman = [];
 
-  if (turnsLeft === 9) {
-    hangman = <>{base}</>;
-  }
+  switch (turnsLeft) {
+    case 10:
+      hangman = [];
+      break;
+    case 9:
+      hangman = ["base"];
+      break;
+    case 8:
+      hangman = ["base", "left-post"];
+      break;
+    case 7:
+      hangman = ["base", "left-post", "top-post"];
+      break;
+    case 6:
+      hangman = ["base", "left-post", "top-post", "noose"];
+      break;
+    case 5:
+      hangman = ["base", "left-post", "top-post", "noose", "head"];
+      break;
+    case 4:
+      hangman = ["base", "left-post", "top-post", "noose", "head", "body"];
+      break;
+    case 3:
+      hangman = [
+        "base",
+        "left-post",
+        "top-post",
+        "noose",
+        "head",
+        "body",
+        "left-arm",
+      ];
+      break;
+    case 2:
+      hangman = [
+        "base",
+        "left-post",
+        "top-post",
+        "noose",
+        "head",
+        "body",
+        "left-arm",
+        "right-arm",
+      ];
+      break;
+    case 1:
+      hangman = [
+        "base",
+        "left-post",
+        "top-post",
+        "noose",
+        "head",
+        "body",
+        "left-arm",
+        "right-arm",
+        "left-leg",
+      ];
+      break;
+    case 0:
+      hangman = [
+        "base",
+        "left-post",
+        "top-post",
+        "noose",
+        "head",
+        "body",
+        "left-arm",
+        "right-arm",
+        "left-leg",
+        "right-leg",
+      ];
+      break;
 
-  if (turnsLeft === 8) {
-    hangman = (
-      <>
-        {base}
-        {leftPost}
-      </>
-    );
-  }
-  if (turnsLeft === 7) {
-    hangman = (
-      <>
-        {base}
-        {leftPost}
-        {topPost}
-      </>
-    );
-  }
-  if (turnsLeft === 6) {
-    hangman = (
-      <>
-        {base}
-        {leftPost}
-        {topPost}
-        {noose}
-      </>
-    );
-  }
-
-  if (turnsLeft === 5) {
-    hangman = (
-      <>
-        {base}
-        {leftPost}
-        {topPost}
-        {noose}
-        {head}
-      </>
-    );
-  }
-  if (turnsLeft === 4) {
-    hangman = (
-      <>
-        {base}
-        {leftPost}
-        {topPost}
-        {noose}
-        {head}
-        {body}
-      </>
-    );
-  }
-  if (turnsLeft === 3) {
-    hangman = (
-      <>
-        {base}
-        {leftPost}
-        {topPost}
-        {noose}
-        {head}
-        {body}
-        {leftArm}
-      </>
-    );
-  }
-  if (turnsLeft === 2) {
-    hangman = (
-      <>
-        {base}
-        {leftPost}
-        {topPost}
-        {noose}
-        {head}
-        {body}
-        {leftArm}
-        {rightArm}
-      </>
-    );
-  }
-  if (turnsLeft === 1) {
-    hangman = (
-      <>
-        {base}
-        {leftPost}
-        {topPost}
-        {noose}
-        {head}
-        {body}
-        {leftArm}
-        {rightArm}
-        {leftLeg}
-      </>
-    );
-  }
-  if (turnsLeft === 0) {
-    hangman = (
-      <>
-        {base}
-        {leftPost}
-        {topPost}
-        {noose}
-        {head}
-        {body}
-        {leftArm}
-        {rightArm}
-        {leftLeg}
-        {rightLeg}
-      </>
-    );
+    default:
+      hangman = [];
   }
 
   return (
     <div id="hangman__container">
-      <div>{hangman}</div>
+      <div>
+        {hangman.map((item) => (
+          <div id={item} key={item}></div>
+        ))}
+      </div>
     </div>
   );
 }
