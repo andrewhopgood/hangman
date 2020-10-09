@@ -1,5 +1,7 @@
 import React from "react";
 import "../styles/PlayGame.css";
+import githublogo from "../data/github_logo.png";
+
 function PlayGame({ startGame }) {
   const play = () => {
     startGame();
@@ -13,6 +15,16 @@ function PlayGame({ startGame }) {
         <button id="btn__play-game" onClick={play}>
           Play Game
         </button>
+      </div>
+      <div id="creator">Created by: Andrew Hopgood</div>
+      <div id="github__container">
+        <a
+          href="https://github.com/andrewhopgood"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img id="github__logo" src={githublogo} alt="my github" />
+        </a>
       </div>
     </div>
   );
