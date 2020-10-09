@@ -16,8 +16,12 @@
   height: 50px;
   border: none;
   font-size: 18px;
-  color: #555;
+  color: #235789;
   outline: 2px solid #537895;
   outline-offset: -5px;
+}
+
+#btn__play-game:hover {
+  color: #f3f3f3;
 }
 /*# sourceMappingURL=PlayGameButton.css.map */
