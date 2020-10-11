@@ -13,11 +13,11 @@ function Game() {
   const [puzzleWord, setPuzzleWord] = useState([]);
   const [turnsLeft, setTurnsLeft] = useState(10);
   const [isGameActive, setIsGameActive] = useState(false);
-  const [didWin, setDidWin] = useState(0);
+  const [checkForWin, setcheckForWin] = useState(0);
   const [score, setScore] = useState(0);
 
   const trackPuzzleWord = () => {
-    setDidWin((prev) => prev + 1);
+    setcheckForWin((prev) => prev + 1);
   };
 
   const searchForLetter = (e) => {
@@ -49,9 +49,12 @@ function Game() {
   };
 
   const playAgain = () => {
+    if (turnsLeft === 0) {
+      setScore(0);
+    }
     setPuzzleWord([]);
     setTurnsLeft(10);
-    setDidWin(0);
+    setcheckForWin(0);
     startGame();
     setScore((prev) => prev + turnsLeft * 250);
   };
@@ -68,7 +71,7 @@ function Game() {
       </>
     );
   }
-  if (isGameActive === true && didWin === puzzleWord.length) {
+  if (isGameActive === true && checkForWin === puzzleWord.length) {
     playGame = (
       <>
         <WinGame playAgain={playAgain} />
