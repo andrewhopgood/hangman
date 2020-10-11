@@ -1,0 +1,14 @@
+#score {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 70%;
+  margin-top: 15px;
+  color: #f1d302;
+  font-size: 28px;
+  font-family: "Anton", sans-serif;
+}
+/*# sourceMappingURL=Score.css.map */
