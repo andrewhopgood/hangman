@@ -7,12 +7,15 @@ import PlayGame from "../components/PlayGame";
 import words from "../data/words";
 import WinGame from "../components/WinGame";
 import LoseGame from "../components/LoseGame";
+import Score from "../components/Score";
 
 function Game() {
   const [puzzleWord, setPuzzleWord] = useState([]);
   const [turnsLeft, setTurnsLeft] = useState(10);
   const [isGameActive, setIsGameActive] = useState(false);
   const [didWin, setDidWin] = useState(0);
+  const [score, setScore] = useState(0);
+
   const trackPuzzleWord = () => {
     setDidWin((prev) => prev + 1);
   };
@@ -42,7 +45,6 @@ function Game() {
   const startGame = () => {
     resetWordVisible();
     setPuzzleWord(words[Math.floor(Math.random() * words.length)]);
-
     setIsGameActive(true);
   };
 
@@ -51,6 +53,7 @@ function Game() {
     setTurnsLeft(10);
     setDidWin(0);
     startGame();
+    setScore((prev) => prev + turnsLeft * 250);
   };
 
   let playGame = <PlayGame startGame={startGame} />;
@@ -59,6 +62,7 @@ function Game() {
     playGame = (
       <>
         <Hangman turnsLeft={turnsLeft} />
+        <Score score={score} />
         <Puzzle puzzleWord={puzzleWord} />
         <LetterList searchForLetter={searchForLetter} />
       </>
